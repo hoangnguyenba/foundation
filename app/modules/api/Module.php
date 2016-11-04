@@ -1,6 +1,6 @@
 <?php
 
-namespace Foundation\Api;
+namespace Foundation\Modules\Api;
 
 use Phalcon\DiInterface;
 use Phalcon\Loader;
@@ -21,8 +21,8 @@ class Module implements ModuleDefinitionInterface
         $loader = new Loader();
 
         $loader->registerNamespaces([
-            'Foundation\Api\Controllers' => __DIR__ . '/controllers/',
-            'Foundation\Api\Models'      => __DIR__ . '/models/'
+            'Foundation\Modules\Api\Controllers' => __DIR__ . '/controllers/',
+            'Foundation\Modules\Api\Models'      => __DIR__ . '/models/'
         ]);
 
         $loader->register();
@@ -55,7 +55,7 @@ class Module implements ModuleDefinitionInterface
             $config = $this->getConfig();
 
             $view = new View();
-            $view->setViewsDir($config->get('application')->viewsDir);
+            $view->setViewsDir(__DIR__ . '/views/');
 
             return $view;
         };
