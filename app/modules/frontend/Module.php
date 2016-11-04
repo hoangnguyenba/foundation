@@ -1,5 +1,5 @@
 <?php
-namespace Foundation\Modules\Frontend;
+namespace Foundation\Frontend;
 
 use Phalcon\DiInterface;
 use Phalcon\Loader;
@@ -19,8 +19,8 @@ class Module implements ModuleDefinitionInterface
         $loader = new Loader();
 
         $loader->registerNamespaces([
-            'Foundation\Modules\Frontend\Controllers' => __DIR__ . '/controllers/',
-            'Foundation\Modules\Frontend\Models' => __DIR__ . '/models/',
+            'Foundation\Frontend\Controllers' => __DIR__ . '/controllers/',
+            'Foundation\Frontend\Models' => __DIR__ . '/models/',
         ]);
 
         $loader->register();

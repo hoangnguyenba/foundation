@@ -1,6 +1,6 @@
 <?php
 
-namespace Foundation\Modules\Api;
+namespace Foundation\Api;
 
 use Phalcon\DiInterface;
 use Phalcon\Loader;
@@ -21,8 +21,8 @@ class Module implements ModuleDefinitionInterface
         $loader = new Loader();
 
         $loader->registerNamespaces([
-            'Foundation\Modules\Api\Controllers' => __DIR__ . '/controllers/',
-            'Foundation\Modules\Api\Models'      => __DIR__ . '/models/'
+            'Foundation\Api\Controllers' => __DIR__ . '/controllers/',
+            'Foundation\Api\Models'      => __DIR__ . '/models/'
         ]);
 
         $loader->register();

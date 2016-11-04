@@ -16,9 +16,9 @@ $loader->registerNamespaces([
  * Register module classes
  */
 $loader->registerClasses([
-    'Foundation\Modules\Frontend\Module' => APP_PATH . '/modules/frontend/Module.php',
-    'Foundation\Modules\Api\Module' => APP_PATH . '/modules/api/Module.php',
-    'Foundation\Modules\Cli\Module'      => APP_PATH . '/modules/cli/Module.php'
+    'Foundation\Frontend\Module' => APP_PATH . '/modules/frontend/Module.php',
+    'Foundation\Api\Module' => APP_PATH . '/modules/api/Module.php',
+    'Foundation\Cli\Module'      => APP_PATH . '/modules/cli/Module.php'
 ]);
 
 $loader->register();

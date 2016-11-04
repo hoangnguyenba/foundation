@@ -1,6 +1,6 @@
 <?php
 
-namespace Foundation\Modules\Api\Controllers;
+namespace Foundation\Api\Controllers;
 
 use Phalcon\Mvc\Controller;
 
